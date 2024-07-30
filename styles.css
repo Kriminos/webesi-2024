@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Couleur d'arrière-plan par défaut */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+header img {
+    height: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    background-image: url(re.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-color: lightcyan;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Coins arrondis pour les images */
+}
+
+.section-content {
+    text-align: center; /* Alignement du texte à gauche */
+}
+
+/* Style pour la liste des sites patrimoniaux */
+.heritage-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centre les images horizontalement */
+    gap: 10px; /* Espacement entre les images */
+}
+
+.heritage-list a {
+    display: block;
+    width: 200px; /* Largeur fixe pour chaque image */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+}
+
+.heritage-list img {
+    width: 100%; /* Remplit le conteneur */
+    height: 90%; /* Conserve le ratio hauteur/largeur */
+    border-radius: 8px; /* Coins arrondis pour les images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée pour un effet de profondeur */
+    transition: transform 0.3s ease; /* Transition pour effet au survol */
+}
+
+.heritage-list img:hover {
+    transform: scale(1.05); /* Effet d'agrandissement au survol */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}

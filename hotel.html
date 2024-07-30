@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bobo-Dioulasso - Réservation d'Hôtel</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        header img {
+            height: 100px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        .hotel-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .hotel-grid article {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .hotel-grid img {
+            max-width: 100%;
+            height: auto;
+        }
+        form {
+            margin-top: 30px;
+        }
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+        form input, form select, form button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo de la Ville">
+        <h1>Bobo-Dioulasso</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="heritage.html">Patrimoine</a></li>
+                <li><a href="hotel.html">Réservation d'hôtel</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Hôtels à Bobo-Dioulasso</h2>
+        <section class="hotel-grid">
+            <article>
+                <img src="ranhotel.jpg" alt="Ranhôtel">
+                <h3>Ranhôtel</h3>
+            </article>
+            <article>
+                <img src="sissiman.jpg" alt="Hôtel Sissiman">
+                <h3>Hôtel Sissiman</h3>
+            </article>
+            <article>
+                <img src="l'entente.jpg" alt="Hôtel L’Amitié">
+                <h3>Hôtel L’Entente</h3>
+            </article>
+            <article>
+                <img src="pacific.jpg" alt="Hôtel Zind Naaba">
+                <h3>Hôtel Pacific</h3>
+            </article>
+            <article>
+                <img src="l'auberge.jpg" alt="Hôtel Auberge">
+                <h3>Hôtel Auberge</h3>
+            </article>
+            <article>
+                <img src="teria.jpg" alt="Hôtel de l’Aéroport">
+                <h3>Hôtel Teria</h3>
+            </article>
+            <article>
+                <img src="Dioulassoba.jpg" alt="Hôtel Casafrica">
+                <h3>Hôtel Dioulassoba</h3>
+            </article>
+            <article>
+                <img src="relax.jpg" alt="Hôtel Le Relais">
+                <h3>Hôtel Relax</h3>
+            </article>
+            <article>
+                <img src="villarose.jpg" alt="Hôtel Villa Rose">
+                <h3>Hôtel Villa Rose</h3>
+            </article>
+            <article>
+                <img src="iba.jpg" alt="Hôtel Palm Beach">
+                <h3>Iba Hôtel</h3>
+            </article>
+            <article>
+                <img src="wifama.jpg" alt="Hôtel Kunanba">
+                <h3>Hôtel Wifama Holiday</h3>
+            </article>
+            <article>
+                <img src="les2palmiers.jpg" alt="Hôtel les 2 Palmiers">
+                <h3>Hôtel les 2 Palmiers</h3>
+            </article>
+        </section>
+
+        <h2>Réservez votre séjour</h2>
+        <form action="#" method="post">
+            <label for="hotel">Choisissez votre hôtel :</label>
+            <select id="hotel" name="hotel" required>
+                <option value="">Sélectionnez un hôtel</option>
+                <option value="Ranhôtel">Ranhôtel</option>
+                <option value="Hôtel Sissiman">Hôtel Sissiman</option>
+                <option value="Hôtel L’Entente">Hôtel L'L’Entente</option>
+                <option value="Hôtel Pacific">Hôtel Pacific</option>
+                <option value="Hôtel Auberge">Hôtel Auberge</option>
+                <option value="Hôtel Teria">Hôtel Teria</option>
+                <option value="Hôtel Dioulassoba">Hôtel Dioulassoba</option>
+                <option value="Hôtel Relax">Hôtel Relax</option>
+                <option value="Hôtel Villa Rose">Iba Hôtel</option>
+                <option value="Hôtel Iba">Hôtel Palm Beach</option>
+                <option value="Hôtel Wifama Holiday">Hôtel Wifama Holiday</option>
+                <option value="Hôtel les 2 Palmiers">Hôtel les 2 Palmiers</option>
+            </select>
+
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Téléphone :</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="check-in">Date d'arrivée :</label>
+            <input type="date" id="check-in" name="check-in" required>
+            
+            <label for="check-out">Date de départ :</label>
+            <input type="date" id="check-out" name="check-out" required>
+            
+            <label for="rooms">Nombre de chambres :</label>
+            <input type="number" id="rooms" name="rooms" min="1" required>
+            
+            <button type="submit">Réserver</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bobo-Dioulasso</p>
+    </footer>
+</body>
+</html>
