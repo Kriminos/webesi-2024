@@ -136,7 +136,7 @@
         </section>
 
         <h2>Réservez votre séjour</h2>
-        <form action="#" method="post">
+        <form id="reservation-form">
             <label for="hotel">Choisissez votre hôtel :</label>
             <select id="hotel" name="hotel" required>
                 <option value="">Sélectionnez un hôtel</option>
@@ -178,5 +178,11 @@
     <footer>
         <p>&copy; 2024 Bobo-Dioulasso</p>
     </footer>
+    <script>
+        document.getElementById('reservation-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Empêche l'envoi réel du formulaire
+            alert('Réservation réussie !'); // Affiche un pop-up de confirmation
+        });
+    </script>
 </body>
 </html>
